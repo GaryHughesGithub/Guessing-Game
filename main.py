@@ -26,7 +26,7 @@ while correct_guess == False:
         break
 
     print(f"You have {attempts} attempts remaining to guess the number.")
-    # print(f"pssst the answer is {answer}!")
+    print(f"pssst the answer is {answer}!")
 
     guess = int(input("Make a guess: "))
 
@@ -37,6 +37,6 @@ while correct_guess == False:
         print("Too Low")
         attempts -= 1
     elif guess == answer:
-        print("Thats correct well done!")
+        print(f"Thats correct! the answer was {answer} well done!")
         correct_guess = True
 
